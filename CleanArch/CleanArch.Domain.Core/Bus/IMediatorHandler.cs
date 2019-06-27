@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CleanArch.Domain.Core.Bus
 {
-    public interface MediatorHandler
+    public interface IMediatorHandler
     {
         Task SendCommand<T>(T Comand) where T : Command;
     }
